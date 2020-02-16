@@ -7,6 +7,8 @@ Remove your UniAgent.
 
 Find the uninstall button.
 
+![](https://raw.githubusercontent.com/realityone/RemoveUniAgent/master/assets/1.png)
+
 ## Step Two
 
 Fetch the dynamic password with your curl:
