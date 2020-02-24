@@ -2,7 +2,10 @@
 # encoding=utf-8
 import hashlib
 
+SLAT = '018B70F6911ECD88C0806D90BE9D223B'
+
 def make_pass(dyn_code):
+    dyn_code = '{}{}'.format(dyn_code, SLAT)
     buf = bytearray(len(dyn_code) * 2)
     for i, c in enumerate(dyn_code):
         buf[i * 2] = ord(c)
@@ -23,7 +26,7 @@ def make_pass(dyn_code):
     return code.decode('utf-8')
 
 def main():
-    print(make_pass('123456'))
+    print(make_pass('302266'))
 
 if __name__ == '__main__':
     main()
