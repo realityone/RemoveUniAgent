@@ -2,7 +2,7 @@
 # encoding=utf-8
 import hashlib
 
-SLAT = '018B70F6911ECD88C0806D90BE9D223B'
+SLAT = '7964E099ED14FAB59A4497C14F16A526'
 
 def make_pass(dyn_code):
     dyn_code = '{}{}'.format(dyn_code, SLAT)
@@ -26,7 +26,7 @@ def make_pass(dyn_code):
     return code.decode('utf-8')
 
 def main():
-    print(make_pass('302266'))
+    print(make_pass('320696'))
 
 if __name__ == '__main__':
     main()
